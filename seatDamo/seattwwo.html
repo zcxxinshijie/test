@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>剧院2</title>
+    <meta name="keywords" content="jQuery,选座">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/detailone.css" />
+    <script language="JavaScript"> setTimeout(function(){location.reload()},300000); //指定1秒刷新一次 3 </script>
+</head>
+
+<body>
+<div class="main">
+    <h2 class="top_title">剧院在线订座</h2>
+    <div class="demo">
+        <div class="shiyishi">
+            <div id="seat-maps">
+                <div class="front" id="fron1">First floor</div>
+            </div>
+            <div id="seat-maps1">
+                <div class="front" id="fron2">Second floor</div>
+            </div>
+        </div>
+        <div class="booking-details">
+            <!--			<p>剧名：<span>随便取</span></p>-->
+            <!--			<p>时间：<span>11月14日 21:00</span></p>-->
+            <p style="font-size:20px;font-weight: bold">座位：</p>
+            <ul id="selected-seatss"></ul>
+            <p style="font-size:20px;font-weight: bold">票数：<span id="counter">0</span></p>
+
+            <button class="checkout-button">确定购买</button>
+            <button class="checkout-button1" onclick="releasthou()">释放座位</button>
+
+            <div id="legend"></div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+
+    <br/>
+</div>
+<script type="text/javascript" src="JavaScript/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="jquery.seat-charts.min.js"></script>
+<script type="text/javascript" src="JavaScript/opertionone.js"></script>
+</body>
+</html>
